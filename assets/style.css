@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 body {
-    background-color: blanchedalmond;
-    font-family: 'Roboto Flex', sans-serif;
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     
   }
@@ -27,7 +27,13 @@ body {
 }
 
 .series1 {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     max-width: 100%;
     border-radius: 12px;
 }
+
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> a32cd82624f596becbe6935d31a0090666e56497
