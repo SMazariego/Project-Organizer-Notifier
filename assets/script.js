@@ -25,6 +25,16 @@ $('#pname').on('input',(e)=>{
     $('#textbox1').val(`${e.target.value}\n${existValue}`)
 });
 
+$('#pname1').on('input',(e)=>{
+    //here to adding the input value to the existValue
+    $('#textbox1').val(`${e.target.value}\n${existValue}`)
+});
+
+$('#pname2').on('input',(e)=>{
+    //here to adding the input value to the existValue
+    $('#textbox1').val(`${e.target.value}\n${existValue}`)
+});
+
 
 
 
