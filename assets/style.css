@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 body {
-    background-color: burlywood;
+    background-color: rgb(248, 211, 163);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     
@@ -31,9 +31,3 @@ body {
     max-width: 100%;
     border-radius: 12px;
 }
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> a32cd82624f596becbe6935d31a0090666e56497
