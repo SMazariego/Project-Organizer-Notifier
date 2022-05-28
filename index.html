@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Mockup</title>
     <link rel="stylesheet" href="./assets/style.css"></link>
-    <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.7.js"
-
-    ></script>
+    <script type="text/javascript"src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAgidEYtg63w4jQ0Pl_oSPtCOUXYVGQGFs"></script>
 
 
 </head>
@@ -21,14 +20,24 @@
     </div>
     </header>
 
-        
-        
     <div class="name">
         <form>
             <label for="projectname">Project name:</label>
             <input type="text" id="pname" name="pname"><br>
-            <br>
-    </div>
+            <br> 
+            <div class="form-group">
+                <label>Project Address:</label>
+                <input type="text" class="form-control" id="search_input" placeholder="Type address..." />
+                <input type="hidden" id="loc_lat" />
+                <input type="hidden" id="loc_long" />
+            </div>
+            
+            <div class="latlong-view">
+                <p><b>Latitude:</b> <span id="latitude_view"></span></p>
+                <p><b>Longitude:</b> <span id="longitude_view"></span></p>
+            </div>
+            
+
             <br>
   <div class="series1"> 
     <tr><input type="checkbox" rel="textbox1" name="Cabinets" class=test/>
