@@ -25,6 +25,26 @@ $('#pname').on('input',(e)=>{
     $('#textbox1').val(`${e.target.value}\n${existValue}`)
 });
 
+//modal triggered
+$('#submit-temp').click(function (event) {
+    $('#exl').modal({
+        fadeDuration: 250
+    });
+    $('input[name=subject]').val($('input[name=pname]').val());
+    let selectedValues = $('input:checkbox:checked').map(function () {
+        return this.name;
+    }).get().join(",");
+    $('textarea[name=mail-body]').val(selectedValues);
+
+
+    return false;
+});
+
+
+
+
+
+
 
 
 
