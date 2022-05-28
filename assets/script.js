@@ -27,7 +27,7 @@ $('#pname').on('input',(e)=>{
 
 //modal triggered
 $('#submit-temp').click(function (event) {
-    $('#exl').modal({
+    $('#ex1').modal({
         fadeDuration: 250
     });
     $('input[name=subject]').val($('input[name=pname]').val());
@@ -38,6 +38,13 @@ $('#submit-temp').click(function (event) {
 
 
     return false;
+});
+
+$('#mail-sending').click(function () {
+    let to = $('input[name=mailto]');
+    let subject = $('input[name=subject]');
+    let body = $('input[name=mail-body]');
+    window.open('mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body));
 });
 
 
