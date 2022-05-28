@@ -6,76 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Mockup</title>
     <link rel="stylesheet" href="./assets/style.css"></link>
-    <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.7.js"
-
-    ></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 
 
 </head>
 <body>
-    <header>
-        <div class="h11">
-          <h1>Organizer Notifier</h1>
-        </div>
-    </header>
-
-    <div class="name">
-        <form>
-            <label for="projectname">Project name:</label>
-            <input type="text" id="pname" name="pname"><br>
-            <br>
+<header>
+    <div class="h11">
+        <h1>Organizer Notifier</h1>
     </div>
+</header>
+
+<div class="name">
+    <form>
+        <label for="projectname">Project name:</label>
+        <input type="text" id="pname" name="pname">
+        <br>
+        <br>
+
+        <br>
+        <div class="series1">
+            <tr><input type="checkbox" rel="textbox1" name="Cabinets" class=test/>
+                Cabinets
+            </tr>
+            <input type="checkbox" rel="textbox1" name="Doors"/>
+            Doors
+            <input type="checkbox" rel="textbox1" name="Drawers">
+            Drawers
+            <input type="checkbox" rel="textbox1" name="Drawer Fronts">
+            Drawer Fronts
+            <input type="checkbox" rel="textbox1" name="Handles">
+            Handles
+
             <br>
-    <div class="series1"> 
-    <tr><input type="checkbox" rel="textbox1" name="Cabinets" class=test/>
-     Cabinets</tr>
-     <input type="checkbox" rel="textbox1" name="Doors" />
-     Doors
-     <input type="checkbox" rel="textbox1" name="Drawers">
-     Drawers
-     <input type="checkbox" rel="textbox1" name="Drawer Fronts">
-     Drawer Fronts
-     <input type="checkbox" rel="textbox1" name="Handles">
-     Handles
 
-     <br> 
-     
-     <input type="checkbox" rel="textbox1" name="Toe Kick">
-     Toe Kick
-     <input type="checkbox" rel="textbox1" name="Toe Skin">
-     Toe Skin
-     <input type="checkbox" rel="textbox1" name="Filler">
-     Filler
-     <input type="checkbox" rel="textbox1" name="Counter Top">
-     Counter Top
-     <input type="checkbox" rel="textbox1" name="Drawer Slides">
-     Drawer Slides
+            <input type="checkbox" rel="textbox1" name="Toe Kick">
+            Toe Kick
+            <input type="checkbox" rel="textbox1" name="Toe Skin">
+            Toe Skin
+            <input type="checkbox" rel="textbox1" name="Filler">
+            Filler
+            <input type="checkbox" rel="textbox1" name="Counter Top">
+            Counter Top
+            <input type="checkbox" rel="textbox1" name="Drawer Slides">
+            Drawer Slides
 
-     <br>
-    
-     <input type="checkbox" rel="textbox1" name="Rubber Backers">
-     Rubber Backers
-     <input type="checkbox" rel="textbox1" name="Spacers">
-     Spacers
-     <input type="checkbox" rel="textbox1" name="Hinges">
-    Hinges
-    <input type="checkbox" rel="textbox1" name="Hinge Plates">
-    Hinge Plates
-    <input type="checkbox" rel="textbox1" name="Finish Paint/Stain">
-    Finish Paint/Stain
+            <br>
 
-    <br>
-   
-    <br>
+            <input type="checkbox" rel="textbox1" name="Rubber Backers">
+            Rubber Backers
+            <input type="checkbox" rel="textbox1" name="Spacers">
+            Spacers
+            <input type="checkbox" rel="textbox1" name="Hinges">
+            Hinges
+            <input type="checkbox" rel="textbox1" name="Hinge Plates">
+            Hinge Plates
+            <input type="checkbox" rel="textbox1" name="Finish Paint/Stain">
+            Finish Paint/Stain
 
-    <textarea id="textbox1" ></textarea>
-    <br>
-    <input id="sBtn" type="submit">
+            <br>
 
+            <br>
 
-    <script src="./assets/script.js"></script>
+            <textarea id="textbox1"></textarea>
+            <br>
+        </div>
+        <button id="submit-temp">提交</button>
+    </form>
+</div>
+
+<div id="ex1" class="modal">
+    <p>Email sending snapshot.</p>
+    mailto: <input type="text" name="mailto" value="test@example.com">
+    <br/>
+    subject: <input type="text" name="subject">
+    <br/>
+    mail body: <textarea name="mail-body"></textarea>
+    <br/>
+    <br/>
+    <a href="#" id="mail-sending">Send Mail</a> /
+    <a href="#" rel="modal:close">Cancel</a>
+</div>
+
+<script src="./assets/script.js"></script>
 
 </body>
 
