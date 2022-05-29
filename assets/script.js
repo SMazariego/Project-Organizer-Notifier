@@ -27,8 +27,9 @@ $('#pname').on('input',(e)=>{
 
 //modal triggered
 $('#submit-temp').click(function (event) {
-    $('#ex1').modal({
+    $('#exl').modal({
         fadeDuration: 250
+    
     });
     $('input[name=subject]').val($('input[name=pname]').val());
     let selectedValues = $('input:checkbox:checked').map(function () {
