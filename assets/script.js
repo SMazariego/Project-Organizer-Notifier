@@ -41,11 +41,25 @@ $('#submit-temp').click(function (event) {
     return false;
 });
 
+//email sending
 $('#mail-sending').click(function () {
     let to = $('input[name=mailto]');
-    let subject = $('input[name=subject]');
-    let body = $('input[name=mail-body]');
-    window.open('mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body));
+    let subject = $('input[name=subject]').val();
+    let body = $('input[name=mail-body]').val();
+    //window.open('mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body));
+
+    emailjs.send("service_swqmzcu","template_1hb9zlf",{
+        subject: subject,
+        body: body,
+    }).then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("Send success\nresponse code is " + response.status);
+    }, function(error) {
+        console.log('FAILED...', error);
+        alert("Send failed\nresponse code is " + error);
+    });
+
+
 });
 
 
