@@ -50,3 +50,36 @@ $('#pname').on('input',(e)=>{
     //here to adding the input value to the existValue
     $('#textbox1').val(`${e.target.value}\n${existValue}`)
 });
+
+//modal triggered
+$('#submit-temp').click(function (event) {
+    $('#exl').modal({
+        fadeDuration: 250
+    
+    });
+    $('input[name=subject]').val($('input[name=pname]').val());
+    let selectedValues = $('input:checkbox:checked').map(function () {
+        return this.name;
+    }).get().join(",");
+    $('textarea[name=mail-body]').val(selectedValues);
+
+
+    return false;
+});
+
+$('#mail-sending').click(function () {
+    let to = $('input[name=mailto]');
+    let subject = $('input[name=subject]');
+    let body = $('input[name=mail-body]');
+    window.open('mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body));
+});
+
+
+
+
+
+
+
+
+
+

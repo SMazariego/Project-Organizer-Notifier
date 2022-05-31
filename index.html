@@ -10,14 +10,21 @@
     <script src="js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAgidEYtg63w4jQ0Pl_oSPtCOUXYVGQGFs"></script>
+    <!--bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 
 
 </head>
 <body>
     <header>
-        <div class="header">
- <h1>Organizer Notifier</h1>
-    </div>
+        <div class="h11">
+          <h1>Organizer Notifier</h1>
+        </div>
     </header>
 
     <div class="name">
@@ -70,29 +77,79 @@
      Drawer Slides
 
      <br>
+            <input type="text" id="pname" name="pname">
+            <br>
+            <br>
     
-     <input type="checkbox" rel="textbox1" name="Rubber Backers">
-     Rubber Backers
-     <input type="checkbox" rel="textbox1" name="Spacers">
-     Spacers
-     <input type="checkbox" rel="textbox1" name="Hinges">
-    Hinges
-    <input type="checkbox" rel="textbox1" name="Hinge Plates">
-    Hinge Plates
-    <input type="checkbox" rel="textbox1" name="Finish Paint/Stain">
-    Finish Paint/Stain
+            <br>
+            <div class="series1">
+                <tr><input type="checkbox" rel="textbox1" name="Cabinets" class=test/>
+                    Cabinets
+                </tr>
+                <input type="checkbox" rel="textbox1" name="Doors"/>
+                Doors
+                <input type="checkbox" rel="textbox1" name="Drawers">
+                Drawers
+                <input type="checkbox" rel="textbox1" name="Drawer Fronts">
+                Drawer Fronts
+                <input type="checkbox" rel="textbox1" name="Handles">
+                Handles
+                <br>
+              
+     
+                <input type="checkbox" rel="textbox1" name="Toe Kick">
+                Toe Kick
+                <input type="checkbox" rel="textbox1" name="Toe Skin">
+                Toe Skin
+                <input type="checkbox" rel="textbox1" name="Filler">
+                Filler
+                <input type="checkbox" rel="textbox1" name="Counter Top">
+                Counter Top
+                <input type="checkbox" rel="textbox1" name="Drawer Slides">
+                Drawer Slides
 
-    <br>
+                <br>
+    
+                <input type="checkbox" rel="textbox1" name="Rubber Backers">
+                Rubber Backers
+                <input type="checkbox" rel="textbox1" name="Spacers">
+                Spacers
+                <input type="checkbox" rel="textbox1" name="Hinges">
+                Hinges
+                <input type="checkbox" rel="textbox1" name="Hinge Plates">
+                Hinge Plates
+                <input type="checkbox" rel="textbox1" name="Finish Paint/Stain">
+                Finish Paint/Stain
+
+                <br>
    
-<br>
+                <br>
 
-<textarea id="textbox1" ></textarea>
-<br>
-<input id="sBtn" type="submit">
+                <textarea id="textbox1" ></textarea>
+                <br>
+            </div>
+            <button id="submit-temp" >submit</button>
+        </form>    
 
+    </div>
+    <!--modal-->
+    <div id="exl" class="modal">
+        <p>Send Your Email.</p>
+        Email: <input type="text" name="mailto" value="test@example.com">
+        <br/>
+        Project Name: <input type="text" name="subject">
+        <br/>
+        Selected Items: <textarea name="mail-body"></textarea>
+        <br/>
+        <br/>
+        <a href="#" id="mail-sending">Send Mail</a> /
+        <a href="#" rel="modal:close">Cancel</a>
+    </div>
 
 <script src="./assets/script.js"></script>
 <img src="./assets/images/Tool.png" id="watermark">
+    <script src="./assets/script.js"></script>
+
 </body>
 
 </html>
