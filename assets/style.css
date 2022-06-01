@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
 :root {
-  --primary-color: rgb(185, 185, 185);
+  --primary-color: rgb(129, 107, 73);
   --secondary-color: rgb(250, 212, 154);
+  --background-color: rgba(245, 225, 195, 0.349);
 }
 
 body {
@@ -18,8 +19,8 @@ body {
       font-style: serif;
   }
 
-.name {
-    font-style: italic;
+#name {
+    font-style: Verdana;
     font-size: 14px;
     border: 2px solid black;
     border-radius: 12px;
@@ -27,27 +28,36 @@ body {
     text-align: left;
     margin-top: 12px;
     max-width: 100%;
+    background-color: var(--secondary-color);
 }
 
-.toDo {
+
+#toDo {
     border: 2px solid rgb(0, 0, 0);
     max-width: 100%;
     border-radius: 12px;
 }
 
 header div h1 {
-  font-style: ;
+  font-style: Verdana;
   color: var(--primary-color);
+  font-size: 70px;
 }
 
 /* watermark img */
 #watermark {
   height: 600px;
-  padding-left: 490px;
+  padding-left: 550px;
   mask-repeat: no-repeat;
   size: cover;
-  position: absolute;
-  
+  position: relative;
+}
+
+/* submit button */
+#submit-temp {
+  border: 2px solid black;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 
