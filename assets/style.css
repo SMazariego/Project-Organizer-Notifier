@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
+:root {
+  --primary-color: rgb(185, 185, 185);
+  --secondary-color: rgb(250, 212, 154);
+}
+
 body {
     background-color: rgba(245, 225, 195, 0.349);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,7 +15,7 @@ body {
 .header {
       text-align: center;
       font-size: xx-large;
-      font-style: greek;
+      font-style: serif;
   }
 
 .name {
@@ -24,16 +29,21 @@ body {
     max-width: 100%;
 }
 
-.series1 {
+.toDo {
     border: 2px solid rgb(0, 0, 0);
     max-width: 100%;
     border-radius: 12px;
 }
 
+header div h1 {
+  font-style: ;
+  color: var(--primary-color);
+}
+
 /* watermark img */
 #watermark {
   height: 600px;
-  padding-left: 450px;
+  padding-left: 490px;
   mask-repeat: no-repeat;
   size: cover;
   position: absolute;
