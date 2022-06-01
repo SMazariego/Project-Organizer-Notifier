@@ -24,7 +24,6 @@ $(document).on('change', '#'+searchInput, function () {
     document.getElementById('longitude_view').innerHTML = '';
 });
 
-
 let existValue = "";
 $('input:checkbox').click(function(){
     var tb = "#"+$(this).attr('rel');
