@@ -45,7 +45,7 @@ $('#submit-temp').click(function (event) {
 $('#mail-sending').click(function () {
     let to = $('input[name=mailto]');
     let subject = $('input[name=subject]').val();
-    let body = $('input[name=mail-body]').val();
+    let body = $('textarea[name=mail-body]').val();
     //window.open('mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body));
 
     emailjs.send("service_swqmzcu","template_1hb9zlf",{
