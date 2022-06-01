@@ -63,8 +63,8 @@ header div h1 {
 
 /* watermark img */
 #watermark {
-  height: 600px;
-  padding-left: 550px;
+  height: 400px;
+  padding-left: 600px;
   mask-repeat: no-repeat;
   size: cover;
   position: relative;
