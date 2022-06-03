@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background-color: rgba(245, 225, 195, 0.349);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    
+  }
+
+.header {
+      text-align: center;
+      font-size: xx-large;
+      font-style: greek;
+  }
+
+.name {
+    font-style: italic;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 12px;
+    justify-content: center;
+    text-align: left;
+    margin-top: 12px;
+    max-width: 100%;
+}
+
+.series1 {
+    border: 2px solid rgb(0, 0, 0);
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* watermark img */
+#watermark {
+  height: 600px;
+  padding-left: 450px;
+  mask-repeat: no-repeat;
+  size: cover;
+  position: absolute;
+}

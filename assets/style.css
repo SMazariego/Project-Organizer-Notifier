@@ -1,36 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
+:root {
+  --primary-color: rgb(129, 107, 73);
+  --secondary-color: rgb(250, 212, 154);
+  --background-color: rgba(245, 225, 195, 0.349);
+}
+
 body {
-    background-color: burlywood;
+    background-color: rgba(245, 225, 195, 0.349);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     
   }
 
-.h11 {
-      font-size: x-large;
-      font-weight: bolder;
-      font-style: italic;
+.header {
       text-align: center;
-    
+      font-size: xx-large;
+      font-style: serif;
   }
 
-.name {
-    font-style: italic;
-    font-size: 14px;
+  .header-img {
+    width: 100%;
+    height: 115px;
+    background: url(./images/pexels-photo-168453.jpeg);
+    background-size: cover;
+    border: 2px solid black;
+  }
+
+#name {
+    font-style: Verdana;
+    font-size: 18px;
     border: 2px solid black;
     border-radius: 12px;
     justify-content: center;
     text-align: left;
     margin-top: 12px;
     max-width: 100%;
+    background-color: var(--secondary-color);
+    text-decoration: underline 2px;
 }
 
-.series1 {
+
+#toDo {
     border: 2px solid rgb(0, 0, 0);
     max-width: 100%;
     border-radius: 12px;
+    background-color: var(--secondary-color);
+    font-style: Verdana;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
 }
 
+header div h1 {
+  font-style: Verdana;
+  color: var(--secondary-color);
+  font-size: 70px;
+  font-size-adjust: inherit;
+  position: relative;
+  text-shadow: 2px 2px black;
+}
 
+/* watermark img */
+#watermark {
+  height: 400px;
+  padding-left: 600px;
+  mask-repeat: no-repeat;
+  size: cover;
+  position: relative;
+}
+
+/* submit button */
+#submit-temp {
+  border: 2px solid black;
+  color: var(--secondary-color);
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+  background-color: rgb(243, 237, 227);
+  font-weight: 500;
+  font-size: 16px;
+}
 

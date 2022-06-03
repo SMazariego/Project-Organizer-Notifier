@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Mockup</title>
     <link rel="stylesheet" href="./assets/style.css"></link>
+    <script type="text/javascript"src="https://code.jquery.com/jquery-1.7.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAgidEYtg63w4jQ0Pl_oSPtCOUXYVGQGFs"></script>
     <!--bulma-->
@@ -20,16 +22,18 @@
 </head>
 <body>
     <header>
-        <div class="h11">
-          <h1>Organizer Notifier</h1>
+        <div class="header title">
+            <div class="header-img">
+          <h1>ORGANIZER NOTIFIER</h1>
+            </div>
         </div>
     </header>
 
-    <div class="name">
+    <div id="name" class="label box">
         <form>
-            <label for="projectname">Project name:</label>
-            <input type="text" id="pname" name="pname">
-            <br>
+            <label for="projectname">Project Name:</label>
+            <input type="text" id="pname" name="pname"><br>
+            <br> 
             <div class="form-group">
                 <label>Project Address:</label>
                 <input type="text" class="form-control" id="search_input" placeholder="Type address..." />
@@ -41,10 +45,11 @@
                 <p><b>Longitude:</b> <span id="longitude_view"></span></p>
             </div>
         </div>
-            
+
+        
     
             <br>
-            <div class="series1">
+            <div id="toDo" class="box">
                 <tr><input type="checkbox" rel="textbox1" name="Cabinets" class=test/>
                     Cabinets
                 </tr>
@@ -90,7 +95,7 @@
                 <textarea id="textbox1" ></textarea>
                 <br>
             </div>
-            <button id="submit-temp" >submit</button>
+            <button id="submit-temp" class="button" >Submit</button>
         </form>    
 
     </div>
@@ -108,9 +113,9 @@
         <a href="#" rel="modal:close">Cancel</a>
     </div>
 
-   
-
-    <script src="./assets/script.js"></script>
+<script src="./assets/script.js"></script>
+<img src="./assets/images/Tool.png" id="watermark">
+    
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -120,8 +125,7 @@
             emailjs.init("hIyyoXyqUlJ9QLea_");
         })();
     </script>
-
-
+<footer></footer>
 </body>
 
 </html>
