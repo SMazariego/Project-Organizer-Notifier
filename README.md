@@ -26,13 +26,13 @@ Lepeng Zhang
 
 # Websites
 
-The link to the deployed application:
+The link to the deployed application: https://smazariego.github.io/Project-Organizer-Notifier/
 
 GitHub Repository：https://github.com/SMazariego/Project-Organizer-Notifier.git
 
 # Application Preview
 
-![Organizer-Notifier](./images/screencapture-127-0-0-1-5500-index-html-2022-06-03-16_07_37.png)
+![Organizer-Notifier](./images/screencapture-file-C-Users-Mike-Desktop-Project-Organizer-Notifier-index-html-2022-06-05-16_28_37.png)
 
 # API Resources
 
