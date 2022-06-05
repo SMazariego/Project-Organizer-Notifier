@@ -1,6 +1,13 @@
 var searchInput = 'search_input';
 
 $(document).ready(function () {
+    $('#pname').val(localStorage.getItem('pname'));
+
+    $('input:checkbox').each(function (items) {
+       this.checked =JSON.parse(localStorage.getItem(this.name));
+    });
+    refresh();
+
     var autocomplete;
     autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
         types: ['geocode'],
@@ -29,6 +36,12 @@ $('input:checkbox').click(function(){
     var tb = "#"+$(this).attr('rel');
     let text_to_add = this.name + "\n";
 
+    var checkName = this.name;
+    var checked = this.checked;
+
+    localStorage.setItem(checkName,checked);
+
+
     let inputVal = $('#pname').val()
     //when click a checkbox and show checked items in the text area
     if($(this).is(":checked")){
@@ -42,12 +55,17 @@ $('input:checkbox').click(function(){
     //storing the value to existValue
 
     existValue = $(tb).val().replace(`${inputVal}\n`, "");
+
+    refresh();
         
 });
 
 $('#pname').on('input',(e)=>{
     //here to adding the input value to the existValue
-    $('#textbox1').val(`${e.target.value}\n${existValue}`)
+    $('#textbox1').val(`${e.target.value}\n${existValue}`);
+
+    localStorage.setItem('pname',$('#pname').val());
+    refresh();
 });
 
 //modal triggered
@@ -86,6 +104,20 @@ $('#mail-sending').click(function () {
 
 
 });
+
+
+function refresh(){
+
+    $('input[name=subject]').val($('input[name=pname]').val());
+    let selectedValues = $('input:checkbox:checked').map(function () {
+        return this.name;
+    }).get().join(",");
+    $('textarea[name=mail-body]').val(selectedValues);
+
+    var need2fill = 'project: ' + $('input[name=pname]').val();
+    need2fill += '\nselectedValues: '+selectedValues;
+    $('#textbox1').val(need2fill);
+}
 
 
 
